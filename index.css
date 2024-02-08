@@ -43,25 +43,36 @@ footer {
   margin: 1.5rem;
 }
 
-.header__title {
+.intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.title {
   font-weight: 200;
-  font-size: 1.7rem;
-  text-align: center;
-}
-
-.header__subtitle {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   color: var(--very-dark-blue);
-  text-align: center;
 }
 
-.header__description {
+.title span {
+  display: block;
+  line-height: 2.3rem;
+}
+
+.title span strong {
+  font-weight: 700;
+}
+
+.description {
   font-size: 1rem;
   color: var(--grayish-blue);
   text-align: center;
+  max-width: 50ch;
 }
 
-.main-content {
+.cards-wrapper {
   display: grid;
   gap: 2rem;
   margin-top: 2rem;
@@ -115,28 +126,16 @@ footer {
     place-content: center;
   }
 
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
-  }
-
-  .header__title {
+  .title {
     font-size: 3rem;
     margin-top: 0;
   }
 
-  .header__subtitle {
-    margin-top: 0;
-    font-size: 3rem;
+  .title span {
+    line-height: 3rem;
   }
 
-  .header__description {
-    max-width: 50ch;
-  }
-
-  .main-content {
+  .cards-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
