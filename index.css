@@ -81,7 +81,6 @@ footer {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 
   background-color: white;
   box-shadow: 0 10px 10px rgb(122, 122, 245, 0.15);
@@ -93,6 +92,14 @@ footer {
   font-size: 1.3rem;
   color: var(--very-dark-blue);
   margin: 0;
+}
+
+.card__description {
+  margin-bottom: 2rem;
+}
+
+img {
+  align-self: flex-end;
 }
 
 .supervisor-card {
